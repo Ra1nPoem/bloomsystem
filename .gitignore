@@ -1,0 +1,26 @@
+# Gradle / build outputs
+.gradle/
+build/
+out/
+*.log
+
+# Development runtime (worlds, logs, crash reports, downloaded libs)
+run/
+libs/
+veil-src/
+cca-src/
+deps.log
+server-*.log
+runclient-*.log
+build-*.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local secrets
+*.env
+.env

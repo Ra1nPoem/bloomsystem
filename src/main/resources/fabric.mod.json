@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bloomsystem",
+  "version": "${version}",
+  "name": "BloomSystem Renderer",
+  "description": "BloomSystem-style spell VFX renderer: Veil world FX, bloom/chromatic post chain, rainbow HUD, CCA state, cascade-style timeline.",
+  "authors": ["VJJ-NEW Team"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.bloomsystem.BloomSystem"],
+    "client": ["com.bloomsystem.client.BloomSystemClient"],
+    "cardinal-components": ["com.bloomsystem.component.BloomComponents"]
+  },
+  "custom": {
+    "cardinal-components": ["bloomsystem:player"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "veil": ">=4.5.0",
+    "cardinal-components-base": ">=6.0.0",
+    "cardinal-components-entity": ">=6.0.0",
+    "java": ">=21"
+  },
+  "suggests": {
+    "imguimc": ">=2.0",
+    "yacl": ">=3.6"
+  }
+}
