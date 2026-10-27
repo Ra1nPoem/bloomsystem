@@ -1,5 +1,7 @@
 # BloomSystem Renderer (Minecraft 1.21.1 / Fabric)
 
+> GitHub: https://github.com/Ra1nPoem/bloomsystem  ·  Release: https://github.com/Ra1nPoem/bloomsystem/releases
+
 BloomSystem 风格的法术特效渲染器垂直切片：**Veil 渲染管线 + 彩虹 HUD + 服务端最小触发包 + Cascade 风格时间线**。
 
 > 目标版本选择 **1.21.1 Fabric**：Veil 4.5.2 目前只发布 1.21.1 版本（[Modrinth: Veil](https://modrinth.com/mod/veil)）。
@@ -76,7 +78,11 @@ C:\Users\op\.gradle\wrapper\dists\gradle-9.5.0-bin\<hash>\gradle-9.5.0\bin\gradl
 - `gradle build` 成功：`build/libs/bloomsystem-0.1.0.jar`（26 KB 左右）；
 - 真实 Fabric 1.21.1 客户端启动（Fabric Loader 0.18.4 + Fabric API 0.116.8+1.21.1 + Veil 4.5.2），
   日志：`[BloomSystem] client initialized`、`Veil chromatic post pipeline registered id=bloomsystem:chromatic`；
-- Demo 自动触发并渲染 HUD/世界法阵；截图：`evidence/demo-config3.png`（YACL 配置面板）、`demo-cca3.png`（Veil 世界 + HUD + bloom）。
+- Demo 自动触发并渲染 HUD/世界法阵；截图：`docs/screenshots/yacl-config.png`（YACL 配置面板）、`docs/screenshots/world-fx.png`（Veil 世界 + HUD + bloom）。
+
+![YACL 配置面板](docs/screenshots/yacl-config.png)
+
+![世界法阵 + Bloom + HUD](docs/screenshots/world-fx.png)
 
 ## 5. 下一步（对应需求完整验收）
 
@@ -98,7 +104,9 @@ C:\Users\op\.gradle\wrapper\dists\gradle-9.5.0-bin\<hash>\gradle-9.5.0\bin\gradl
 
 ## 7. 命令方块测试地图
 
-- 发布包：`dist\BloomSystem-测试地图.zip`（含 TestWorld + README-测试地图.txt + 截图）
+![命令方块测试地图](docs/screenshots/test-map.png)
+
+- 发布包：[BloomSystem-测试地图.zip](https://github.com/Ra1nPoem/bloomsystem/releases)（含 TestWorld + README-测试地图.txt + 截图）
 - 平台：黑石/金块法阵平台 + 6 个拉杆站：南侧触发/观看位/触发，北侧触发/午夜/白天；
 - 拉杆触发 `/bloom trigger @p prism_ritual`；B 或 `/bloomconfig` 打开 YACL 配置；
 - 开发重建脚本：`scripts\build-bloomsystem-testmap.ps1`（RCON 25575）。
